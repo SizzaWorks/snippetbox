@@ -37,7 +37,7 @@ A modern, secure web application for creating and sharing text snippets. Built w
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/snippetbox.git
+git clone https://github.com/SizzaWorks/snippetbox.git --depth=1
 cd snippetbox
 
 # Set up the database
