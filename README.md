@@ -99,8 +99,6 @@ sudo docker compose up
 sudo docker compose up -d
 ```
 
-Note: The Dockerfile is configured to use the host's network, assuming PostgreSQL is running on the same machine.
-
 ## 📁 Project Structure
 
 ```

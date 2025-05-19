@@ -20,4 +20,4 @@ COPY --from=builder /app/version.txt .
 
 EXPOSE 4000
 
-ENTRYPOINT ["sh", "-c", "./snippetbox -dsn=$DSN"]
+ENTRYPOINT ["./snippetbox"]
