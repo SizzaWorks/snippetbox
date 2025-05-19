@@ -1,13 +1,9 @@
+version: "3.8"
+
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
     ports:
       - "4000:4000"
-    command:
-      ["./snippetbox", "-dsn=postgres://web:pass@localhost:5432/snippetbox"]
-    volumes:
-      - ./ui:/root/ui
-    restart: unless-stopped
-    network_mode: "host"
+    environment:
+      - DSN=postgres://web:pass@10.0.0.49:5432/snippetbox
